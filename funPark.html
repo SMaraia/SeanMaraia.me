@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>Unity Amusement Park</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+
+    <script type="text/javascript">
+        <!--
+        var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+        if (document.location.protocol == 'https:')
+            unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+        document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+         -->
+    </script>
+
+    <script type="text/javascript">
+        var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+        if (document.location.protocol == 'https:')
+            unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+        document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+         <!--
+        var config = {
+            width: 960,
+            height: 600,
+            params: {
+                enableDebugging: "0"
+            }
+
+        };
+        var u = new UnityObject2(config);
+
+        jQuery(function () {
+
+            var $missingScreen = jQuery("#unityPlayer").find(".missing");
+            var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+            $missingScreen.hide();
+            $brokenScreen.hide();
+
+            u.observeProgress(function (progress) {
+                switch (progress.pluginStatus) {
+                case "broken":
+                    $brokenScreen.find("a").click(function (e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        u.installPlugin();
+                        return false;
+                    });
+                    $brokenScreen.show();
+                    break;
+                case "missing":
+                    $missingScreen.find("a").click(function (e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        u.installPlugin();
+                        return false;
+                    });
+                    $missingScreen.show();
+                    break;
+                case "installed":
+                    $missingScreen.remove();
+                    break;
+                case "first":
+                    break;
+                }
+            });
+            u.initPlugin(jQuery("#unityPlayer")[0], "webPlayer.unity3d");
+        });
+         -->
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="header groupZero">
+        <div class="col span_1_of_3" id="nameLink">
+            <a href="index.html">
+                <h1>Sean Maraia</h1>
+                <h2>Game Designer</h2>
+            </a>
+        </div>
+        <div class="col span_2_of_3 navBar">
+            <ul id="topBar">
+
+                <li class="barItem"><a href="art.html" class="list">Art Assets</a></li>
+                <li class="barItem"><a href="notes.html" class="list">Notes</a></li>
+                <li class="barItem"><a href="media/SeanResumeSept2014.pdf" class="list"> Resume Link</a></li>
+                <li class="barItem"><a href="writing.html" class="list">Writing Sample</a></li>
+                <li class="barItem"><a href="extra.html" class="list">Extra Information</a></li>
+                <li class="barItem"><a href="mailto:spm3713@g.rit.edu" class="list"> Contact Me</a></li>
+                <li class="barItem"><a href="http://www.linkedin.com/in/smaraia/" class="list"> LinkedIn </a>
+                </li>
+                <li class="barItem"><a href="https://github.com/SMaraia" class="list">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="links groupOne">
+
+
+        <div class="col span_3_of_3">
+            <h2>Amusement Park</h2>
+
+            <div class="content">
+                <div id="unityPlayer">
+                    <div class="missing">
+                        <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+                            <img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+                        </a>
+                    </div>
+                    <div class="broken">
+                        <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+                            <img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="central">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+
+
+        </div>
+    </div>
+    <footer>
+        <cite>Copyright 2014 Sean Maraia</cite>
+        <br />
+        <code>All rights reserved</code>
+
+        <cite>Column Based CSS based on <a href="http://www.responsivegridsystem.com/">Responsive Grid System by Graham Miller</a></cite>
+                <br />
+        <cite> Font: Copyright (c) 2011 Natanael Gama (exo@ndiscovered.com), with Reserved Font Name “Exo”</cite>
+    </footer>
+</body>
+
+</html>
+
