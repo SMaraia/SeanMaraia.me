@@ -297,7 +297,9 @@ a.list:active {
         width: 100%;
         text-align: center;
     }
-
+    .proj{
+        height: 43em;   
+    }
     .extra {
         display: none;
     }
