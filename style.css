@@ -132,7 +132,7 @@ a.list:active {
 .proj {
     
     box-shadow: 5px 5px 2px rgba(0, 255, 255, 0.51);
-    height: 40em;
+    height: 45em;
     position: relative;
 }
 .proj:hover{
@@ -211,11 +211,6 @@ a.list:active {
 .barItem {
     display: inline;
     padding: 2%;
-}
-
-.button {
-    display: block;
-    list-style-type: none;
 }
 .navBar {
     padding-top: 4%;
@@ -298,7 +293,7 @@ a.list:active {
         text-align: center;
     }
     .proj{
-        height: 43em;   
+        height: 45em;   
     }
     .extra {
         display: none;
