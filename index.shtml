@@ -12,8 +12,10 @@
 
 </head>
 
+<!--#include file="header.shtml"-->
+    
 <body>
-    <!--#include file="header.shtml"-->
+    
     <!-- This is a test-->
     <div class="intro groupTwo">
         <div class="col span_3_of_8">
