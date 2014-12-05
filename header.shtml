@@ -1,0 +1,28 @@
+<header>
+    <div class="header groupZero">
+        <a href="index.html">
+            <div class="col span_1_of_3" id="nameLink">
+
+                <h1>Sean Maraia</h1>
+                <h2>Game Designer</h2>
+
+            </div>
+        </a>
+
+        <div class="col span_2_of_3 navBar">
+            <ul id="topBar">
+
+                <li class="barItem"><a href="art.html" class="list">Art Assets</a></li>
+                <li class="barItem"><a href="notes.html" class="list">Notes</a></li>
+                <li class="barItem"><a href="media/SeanResumeSept2014.pdf" class="list"> Resume Link</a></li>
+                <li class="barItem"><a href="writing.html" class="list">Writing Sample</a></li>
+                <li class="barItem"><a href="extra.html" class="list">Extra Information</a></li>
+                <li class="barItem"><a href="mailto:spm3713@g.rit.edu" class="list"> Contact Me</a></li>
+                <li class="barItem"><a href="http://www.linkedin.com/in/smaraia/" class="list"> LinkedIn </a>
+                </li>
+                <li class="barItem"><a href="https://github.com/SMaraia" class="list">GitHub</a></li>
+                <li class = "barItem"><a href="404.html"> 404 </a></li>>
+            </ul>
+        </div>
+    </div>
+</header>
