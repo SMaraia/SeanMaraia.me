@@ -9,18 +9,48 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <title>Sean Maraia</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('#projects .proj').click(function(){
+                 
+                 
+                
+                var holder = $(".thumb",this).attr('src');
+                holder = holder.split('.png');
+                var imageLink = holder[0] + 'Big.png';
+                var pageLink = holder[0].split('media/')[1] + '.shtml';
+                console.log(imageLink);
+                console.log(pageLink);
+                $('#curImg').fadeOut(500, function(){
+                    
+                    $('#curImg').attr('src', imageLink);
+                 });
+                $('#curProj').html( $(".projName", this).html());
+                
+                $('.intro').css("display", 'none');
 
+                window.location = "#imgPlace";
+                $('#longDescription').load(pageLink+ ' #longDesc');
+                
+                $('#curImg').fadeIn(500);
+            });
+        });
+    </script>
+    
 </head>
 
 <!--#include file="header.shtml"-->
     
 <body>
     
+     <!--<h3><a href="notes.shtml" class="list">Notes</a></h3>-->
+    
     <!-- This is a test-->
     <div class="intro groupTwo">
         <div class="col span_3_of_8">
             <div id="image">
-                <img src="media/seanMsmall.jpg" class="majorImg" title="A picture of myself" alt="Sean Maraia" width="266" height="400" />
+                <img src="media/seanMTest.jpg" class="majorImg" title="A picture of myself" alt="Sean Maraia" width="266" height="400" />
             </div>
         </div>
 
@@ -30,7 +60,7 @@
             <blockquote>
                 <p>
 
-                    My name is Sean Maraia. I am a sophomore at Rochester Institute of Technology, where I study Game Design and Development the College of Computing and Information Sciences. I am currently looking for cooperative education opportunities within the computing industry for the Summer of 2015. Below are my projects, which I hope you will enjoy. If you are interested in reaching me, you can click the "Contact Me" link above, or send an email to spm3713 AT g DOT rit DOT edu.
+                    My name is Sean Maraia. I am a junior at Rochester Institute of Technology, where I study Game Design and Development the College of Computing and Information Sciences. I am currently looking for cooperative education opportunities within the computing industry for the Spring and/or Summer of 2016. Below are some of my more recent projects, which I hope you will enjoy. If you are interested in reaching me, you can click the "Contact Me" link above, or send me an email at spm3713 AT g DOT rit DOT edu.
 
                 </p>
 
@@ -41,23 +71,28 @@
             </blockquote>
         </div>
     </div>
-
+    
+    <div class = "groupThree">
+        <a id="imgPlace"></a>
     <div class="col span_3_of_3">
-        <h2>Projects</h2>
+        <h2 id = "curProj">Projects</h2>
+        
+        <img id="curImg" src="media/totkBig.png" alt="promo Picture">
+        <p id = "longDescription"></p>
     </div>
-
-    <div class="links groupOne">
+    </div>
+        
+    <div class="links groupOne" id="projects">
 
 
 
         <div class="col span_1_of_3 proj">
-            <a href="totk.html">
-                <h3>Trick or Treat Kitty</h3>
+            
+                <h3 class = "projName">Trick or Treat Kitty</h3>
 
                 <img src="media/totk.png" class="thumb" title="Trick or Treat Kitty" alt="Promo Picture from the Game" width="400" height="408" />
                 <p>The first game made by the ThunderForge Dev Team, which was begun at a weekend Hackathon in October of 2013. My responsibilities were for the story of the game, as well as to design the levels.
                 </p>
-            </a>
             <ul>
 
                 <li class="projLink"><a href="http://www.thunderforge.co/" class="list"> Project Link</a>
@@ -67,14 +102,12 @@
         </div>
 
 
-        <div class="col span_1_of_3 proj">
-            <a href="zombie.html">
-                <h3>Zombie Fiesta</h3>
+        <div class="col span_1_of_3 proj" >
+                <h3 class = "projName">Zombie Fiesta</h3>
                 <img src="media/zf.png" class="thumb" title="Zombie Fiesta" alt="Picture of Zombie Fiesta in Action" width="400" height="300" />
                 <p>
                     Zombie Fiesta was a project for the Game Design and Algorithmic Problem Solving II class, built in XNA with C#. I created the external tool that created items for the inventory system, and worked on the games implementation of these items, and the inventory system as a whole. I also worked on the score aspect of the UI.
                 </p>
-            </a>
             <ul>
                 <li class="projLink"><a href="http://www.github.com/liam-middlebrook/Navier-Boats" class="list"> Project Link </a>
                 </li>
@@ -83,27 +116,17 @@
         </div>
 
         <div class="col span_1_of_3 proj">
-            <a href="funPark.html">
-                <h3>Amusement Park Ride</h3>
+                <h3 class = "projName">Amusement Park Ride</h3>
                 <img src="media/scramble.png" class="thumb" title="Unity Amusement Park" alt="Picture of the ride" width="400" height="249" />
                 <p>
                     An amusement park ride I modeled in Maya, and then brought into Unity to script the motion of the ride. I created the main assets, and the lights, and used the rest of the terrain assets as provided for free in the Unity Store.
                 </p>
-            </a>
         </div>
     </div>
 
 
 
-    <footer>
-        <cite>Copyright 2014 Sean Maraia</cite>
-        <br />
-        <code>All rights reserved</code>
-
-        <cite>Column Based CSS based on <a href="http://www.responsivegridsystem.com/">Responsive Grid System by Graham Miller</a></cite>
-                <br />
-        <cite> Font: Copyright (c) 2011 Natanael Gama (exo@ndiscovered.com), with Reserved Font Name “Exo”</cite>
-    </footer>
+    <!--#include file="footer.shtml" -->
 </body>
 
 </html>
