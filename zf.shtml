@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>Zombie Fiesta</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+    
+<!--#include file="header.shtml"-->
+    
+<body>
+
+    <div class="links groupOne">
+
+
+        <div class="col span_3_of_3">
+            <h2>Zombie Fiesta</h2>
+        </div>
+    </div>
+
+    <div class="groupTwo">
+        <div class="col span_2_of_3">
+            <img src="media/zfBig.png" class="majorImg" title="Gameplay from Zombie Fiesta" alt="A Picture uof the interface for my Item Creator" width="800" height="548" />
+        </div>
+
+
+    <div class="groupThree">
+        
+        <div class="col span_1_of_3">
+            <p id = "longDesc">
+
+                Zombie Fiesta was a project in our Game Development and Algorithmic Problem Solving class. Made in XNA, the game is a roguelike-style game with a randomly generated world. I was responsible for the shader that changed the color of the water, as well as the item creator, found <a href="zf.shtml" class = "list"> HERE </a>. I built the Interface for the Item Creator from scratch. The application uses JSON.net to export the desired characterestics to an external file, which we then imported into the game proper, creating a new Item with new characteristics. This tool was able to create weapons, consumables, and ammo, and had the capability to be used for armor and stat boosting until time constraints caused those features to be cut from the game. 
+            </p>
+            <ul>
+                <li class="projLink" style="list-style-type:none"><a href="http://www.github.com/liam-middlebrook/Navier-Boats" class="list"> Project Link </a>
+                </li>
+                <li>  <a href="http://www.github.com/SMaraia/Navier-Boats-ItemCreator" class="list"> Item Creator Link </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="col span_2_of_3">
+            <img src="media/screenCap.png" class="majorImg" title="Item Creator from Zombie Fiesta" alt="A Picture uof the interface for my Item Creator" width="300" height="367" />
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+<!--#include file="footer.shtml" -->
+</body>
+
+</html>
+

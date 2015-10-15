@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>Trick Or Treat Kitty</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<!--#include file="header.shtml"-->
+    
+<body>
+
+    <div class="links groupOne">
+
+
+        <div class="col span_3_of_3">
+            <h3>Trick or Treat Kitty</h3>
+            <img src="media/totkBig.png" class="majorImg" title="Gamplay from Trick or Treat Kitty" alt="A Picture Trick or Treat Kitty" width="800" height="813" />
+            <p id="longDesc">
+                The first game made by the ThunderForge Dev Team, which was begun at a weekend Hackathon in October of 2013. My responsibilities were for the story of the game, as well as to design the levels. In addition, I recorded the sound effects for the game. We created the game in construct 2, and the levels were all scripted in XML.
+            </p>
+            <ul>
+                <li class="projLink" style="list-style-type:none"><a href="http://www.thunderforge.co" class="list"> Project Link </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!--#include file="footer.shtml" -->
+</body>
+
+</html>
+

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>Sean Maraia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<!--#include file="header.shtml"-->
+    
+<body>
+    
+<form method="post" action="http://people.rit.edu/spm3713/formmail.php" name="SampleForm">
+    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+    <!-- STEP 2: Put your email address in the 'recipients' value.
+                 Note that you also have to allow this email address in the
+                 $TARGET_EMAIL setting within formmail.php!
+    -->
+    <input type="hidden" name="recipients" value="spm3713@rit.edu" />
+
+    <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+            NOTE: DO NOT put your email address and name here.
+            "Your email address" and "Your name" are error messages for your users to see,
+            not placeholders for you to replace.
+    -->
+    <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+
+    <!-- STEP 4: Put your subject line in the 'subject' value. -->
+    <input type="hidden" name="subject" value="Portfolio Response" />
+
+    <!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+
+    <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+    <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+
+    <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+    <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+    
+<div class="intro groupOne">
+        <div class="col span_1_of_2">
+        <h3>Please enter your name:</h3>
+    <input type="text" name="FullName" />
+        </div>
+
+        <div class ="col span_1_of_2">
+        <h3>Please enter your email address:</h3>
+        <input type="text" name="EmailAddr" />
+        </div>
+</div>
+<div class = "groupTwo">
+            <div class="col span_3_of_3">
+        <h3>Please enter your message:</h3>
+        
+        <textarea name="mesg" rows="10" cols="50"></textarea>
+        <br />
+    
+    
+        <input type="submit" value="Submit" />
+        <span style="font-size:60%;">Powered by Tectite <a href="http://www.tectite.com/" target="_blank">web form</a> processor (FormMail).</span>
+            </div>
+</div>
+    
+    </form>
+
+    <!--#include file="footer.shtml" -->
+</body>
+    
+
+    
+</html>
+

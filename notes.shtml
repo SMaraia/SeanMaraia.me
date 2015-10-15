@@ -11,31 +11,15 @@
 
 
 </head>
+<!--#include file="header.shtml"-->
 
 <body>
-    <div class="header groupZero">
-        <div class="col span_1_of_3" id="nameLink">
-            <a href="index.html">
-                <h1>Sean Maraia</h1>
-                <h2>Game Designer</h2>
-            </a>
-            <br />
-        </div>
-        <div class="col span_2_of_3 navBar">
-            <ul id="topBar">
-
-                <li class="barItem"><a href="art.html" class="list">Art Assets</a></li>
-                <li class="barItem"><a href="notes.html" class="list">Notes</a></li>
-                <li class="barItem"><a href="media/SeanResumeSept2014.pdf" class="list"> Resume Link</a></li>
-                <li class="barItem"><a href="writing.html" class="list">Writing Sample</a></li>
-                <li class="barItem"><a href="extra.html" class="list">Extra Information</a></li>
-                <li class="barItem"><a href="mailto:spm3713@g.rit.edu" class="list"> Contact Me</a></li>
-                <li class="barItem"><a href="http://www.linkedin.com/in/smaraia/" class="list"> LinkedIn </a>
-                </li>
-                <li class="barItem"><a href="https://github.com/SMaraia" class="list">GitHub</a></li>
-            </ul>
-        </div>
-    </div>
+    
+    <h2> Updated Notes</h2>
+    <p>
+    
+        I made a <cite><a href="http://fancyapps.com/fancybox/">fancybox-based image gallery</a></cite> in my 'Art Assets' page, and added some new pictures to browse with it. I modified the values for the gallery to fit better with the site's design, and provided download links to visitors. My DHTML application is found on the main page, where the user can click any of the smaller projects and see almost all of the content from the projects page, including the title, larger picture, and full project description. This is where I felt I went above and beyond, because in order to do this properly I made heavy use of JQuery to get the text from my project descriptions directly from their source pages, and used string modifications to bring up the large image versions. I particularly like this application, because it allows the user to stay on the project page, which is the most important one, much longer before they have to click any links. My 404 page is working and can be tested by visiting <a href = "totallyNotAFakeURL.html" class="list">totallyNotAFakeURL.html</a>. All of my pages are shtml files, with the navbar and footer both being implemented via SSI. The secure page can be found <a href="protected/secure.shtml" class = "list"> HERE </a>
+    </p>
     <h2>Notes</h2>
     <p>I am using the <a href="http://www.responsivegridsystem.com/" class="list">Responsive Grid System by Graham Miller</a> for the basis of my layout, because I like the uniformity of the grids, as well as the flexibility of being able to alter the grid sizing at will. All of the images were created by me, and are of projects that I myself have been a primary or sole contributor to. The script to run the 
     Unity Project came directly from the webplayer.html file that is created
@@ -48,15 +32,10 @@
     feel like they were warranted, as the layout would have been far too sparse,
     so I had to condense that into a single page. It was also difficult to bring in 
     above and beyond work, so I decided to put the page on a personal domain at <a href="http://seanmaraia.me" class="list">SeanMaraia.me</a>, which was an interesting challenge in learning how to host my own site.</p>
-    <footer>
-        <cite>Copyright 2014 Sean Maraia</cite>
-        <br />
-        <code>All rights reserved</code>
+    
+    
 
-        <cite>Column Based CSS based on <a href="http://www.responsivegridsystem.com/">Responsive Grid System by Graham Miller</a></cite>
-        <br />
-        <cite> Font: Copyright (c) 2011 Natanael Gama (exo@ndiscovered.com), with Reserved Font Name “Exo”</cite>
-    </footer>
+    <!--#include file="footer.shtml" -->
 </body>
 
 </html>
