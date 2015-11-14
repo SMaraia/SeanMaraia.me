@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>SuperSecret</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<!--#include file="header.shtml"-->
+
+<body>
+    
+    <h2> Welcome to the Party RIT Affiliate!</h2>
+    <div class="groupOne">
+        <div class = "col span_3_of_3">
+<iframe width="560" height="315" src="//www.youtube.com/embed/2HQaBWziYvY"  autoplay allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--#include file="footer.shtml" -->
+</body>
+
+</html>

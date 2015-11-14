@@ -8,69 +8,160 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <title>Art Assets</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/lib/jquery-1.10.1.min.js">
+    </script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="javascripts/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="javascripts/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Add Button helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="javascripts/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="javascripts/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="javascripts/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="javascripts/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!-- Add Media helper (this is optional) -->
+    <script type="text/javascript" src="javascripts/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox')
+                .attr('rel', 'gallery')
+                .fancybox({
+                    padding: 0,
+                    afterLoad: function () {
+                        this.title = "<a href='" + this.href + "'> Download Link </a>" + this.title;
+                    },
+                    helpers: {
+                        title: {
+                            type: 'outside',
+                            
+                        }
+                    },
+                    closeBtn: false,
+                    openEffect: 'fade',
+                    closeEffect: 'fade'
+                    
+
+                });
+
+
+
+
+
+        });
+    </script>
 
 
 </head>
-
-<body>
+<header>
     <div class="header groupZero">
-        <div class="col span_1_of_3" id="nameLink">
-            <a href="index.html">
+        <a href="index.html">
+            <div class="col span_1_of_3" id="nameLink">
+
                 <h1>Sean Maraia</h1>
                 <h2>Game Designer</h2>
-            </a>
-            <br />
-        </div>
+
+            </div>
+        </a>
+
         <div class="col span_2_of_3 navBar">
             <ul id="topBar">
 
                 <li class="barItem"><a href="art.html" class="list">Art Assets</a></li>
-                <li class="barItem"><a href="notes.html" class="list">Notes</a></li>
                 <li class="barItem"><a href="media/SeanResumeSept2014.pdf" class="list"> Resume Link</a></li>
                 <li class="barItem"><a href="writing.html" class="list">Writing Sample</a></li>
                 <li class="barItem"><a href="extra.html" class="list">Extra Information</a></li>
-                <li class="barItem"><a href="mailto:spm3713@g.rit.edu" class="list"> Contact Me</a></li>
+                <li class="barItem"><a href="contact.html" class="list"> Contact Me</a></li>
                 <li class="barItem"><a href="http://www.linkedin.com/in/smaraia/" class="list"> LinkedIn </a>
                 </li>
                 <li class="barItem"><a href="https://github.com/SMaraia" class="list">GitHub</a></li>
             </ul>
         </div>
     </div>
-    <h2>Art Assets</h2>
+</header>
 
+<body>
+
+    <h2>Art Assets</h2>
+    <div class="col span_3_of_3">
+    
+        <p class = "central">
+            Click any Image to see a larger version, and browse the Gallery
+        </p>
+    </div>
     <div class="links groupOne">
 
-        <div class="col span_3_of_3">
+        <div class="col span_1_of_2">
+
+
             <h3>Chess Set</h3>
-            <img src="media/chess.png" class="majorImg" title="Chess board" alt="Picture a Chess Set" width="800" height="394" />
-            <p class="central">
+            <a class="fancybox" href="media/chess.png" data-fancybox-group="gallery" title="A Chess board made in Maya for my 3D Art Class">
+                <img src="media/chessSmall.png" class="majorImg gallery" title="Chess board" alt="Picture a Chess Set" width="300" height="148" />
+            </a>
+            <p class="central" id="chess">
                 A Chess board made in Maya for my 3D Art class.
             </p>
-            <ul>
-                <li class="projLink"><a href="media/chess.png" class="list"> Download Link </a>
-                </li>
-            </ul>
+
+            <a href="media/chess.png" class="list"> Download Link </a>
 
         </div>
-
-        <div class="col span_3_of_3">
+        <div class="col span_1_of_2">
             <h3>Fallout 3 Gauss Rifle Recreated</h3>
-
-            <img src="media/prop.png" class="majorImg" title="Gauss Rifle" alt="Model of a Gauss Rifle from Fallout 3" width="800" height="215" />
-            <p class="central">
+            <a class="fancybox" href="media/prop.png" data-fancybox-group="gallery" title="A recreation of a Weapon from Bethesda's Fallout 3, made in Maya">
+                <img src="media/propSmall.png" class="majorImg gallery" title="Gauss Rifle" alt="Model of a Gauss Rifle from Fallout 3" width="300" height="81" />
+            </a>
+            <p class="central" id="prop">
                 A recreation of a Weapon from Bethesda's Fallout 3, made in Maya
             </p>
             <a href="media/prop.png" class="list"> Download Link</a>
         </div>
     </div>
+<div class = "links groupTwo">
+    <div class="col span_1_of_2">
 
+
+            <h3>Rock</h3>
+            <a class="fancybox" href="media/rockBig.png" data-fancybox-group="gallery" title="A Rock I modeled and textured for a Unity3D Project.">
+                <img src="media/rockSmall.png" class="majorImg gallery" title="Rock" alt="Picture a Rock" width="300" height="222" />
+            </a>
+            <p class="central">
+                A Rock I modeled and textured for a Unity3D Project.
+            </p>
+
+            <a href="media/rockBig.png" class="list"> Download Link </a>
+
+        </div>
+    
+    <div class="col span_1_of_2">
+
+
+            <h3>Urn</h3>
+            <a class="fancybox" href="media/urnBig.png" data-fancybox-group="gallery" title="An Urn I modeled and textured for a Unity3D Project.">
+                <img src="media/urnSmall.png" class="majorImg gallery" title="Rock" alt="Picture a Rock" width="300" height="380" />
+            </a>
+            <p class="central">
+                A Rock I modeled and textured for a Unity3D Project.
+            </p>
+
+            <a href="media/rockBig.png" class="list"> Download Link </a>
+
+        </div>
+    
+</div>
     <footer>
         <cite>Copyright 2014 Sean Maraia</cite>
         <br />
         <code>All rights reserved</code>
 
         <cite>Column Based CSS based on <a href="http://www.responsivegridsystem.com/">Responsive Grid System by Graham Miller</a></cite>
-                <br />
+        <br />
         <cite> Font: Copyright (c) 2011 Natanael Gama (exo@ndiscovered.com), with Reserved Font Name “Exo”</cite>
     </footer>
 </body>
