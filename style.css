@@ -34,9 +34,11 @@ footer {
 }
 #nameLink {
     box-shadow: 3px 3px 2px rgba(170, 93, 0, 0.61);
+	transition: box-shadow 1s;
 }
 #nameLink:hover {
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px #57362D;
+	transition: box-shadow 1s;
 }
 h1 {
     font-size: 250%;
@@ -84,17 +86,20 @@ a {
 }
 
 a.list {
-    color: #8c8479;
+    color: #805822;
     font-weight: bold;
     text-decoration: underline;
+	transition: color 1s;
     font-size: 120%;
 }
 a.list:visited {
-    color: #4b7c8a;
+    color: #57362D;
     text-decoration: none;
+	transition: color 1s;
 }
 a.list:hover {
-    color: #57362d;
+	transition: color 1s;
+    color: #452b24;
     text-decoration: none;
     background-color: inherit;
 }
@@ -124,6 +129,7 @@ a.list:hover {
     position: relative;
 }
 .proj:hover {
+	transition: box-shadow 0.25s;
     box-shadow: 7px 7px 2px #8A5648;
 }
 .proj .projLink {
