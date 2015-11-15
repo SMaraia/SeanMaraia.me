@@ -239,7 +239,7 @@ img.gallery:hover{
     display: inline;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .col {
         margin: 1% 0 1% 0%;
         float: none;
