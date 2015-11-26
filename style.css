@@ -22,39 +22,39 @@
     font-style: normal;
 }
 body {
-    background-color: #6A9AA8;
+    background-color: rgb(83, 83, 83);
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom: 7%;
     font-family: "exomedium";
-    color: #8A5648;
+    color: rgba(242, 237, 212, 0.85);
 }
 footer {
     text-align: center;
 }
 #nameLink {
-    box-shadow: 3px 3px 2px rgba(170, 93, 0, 0.61);
+    box-shadow: 3px 3px 2px rgba(211, 85, 55, 0.61);
 	transition: box-shadow 1s;
 }
 #nameLink:hover {
-    box-shadow: 1px 1px 2px #57362D;
+    box-shadow: 1px 1px 2px rgba(211, 85, 55, 1.0);
 	transition: box-shadow 1s;
 }
 h1 {
     font-size: 250%;
     font-family: "exoextrabold";
-    color: #57362D;
+    color: rgb(242, 237, 212);
     text-align: center;
 }
 h2 {
-    color: #58362d;
+    color: rgb(242, 237, 212);
     font-size: 200%;
     font-family: "exobold";
     text-decoration: underline;
     text-align: center
 }
 h3 {
-    color: #8a5648;
+    color: rgb(242, 237, 212);
     font-size: 175%;
     font-family: "exobold";
     text-decoration: none;
@@ -71,7 +71,7 @@ p {
 p.writing {
     text-indent: 50px;
     text-align: left;
-    color: #aa5d00;
+    color: rgb(242, 237, 212);
     font-weight: normal;
 }
 p.writing::first-letter {
@@ -80,26 +80,26 @@ p.writing::first-letter {
 }
 a {
     background-color: inherit;
-    color: #8a5648;
+    color: rgb(211, 85, 55);
     text-decoration: none;
     font-weight: bold;
 }
 
 a.list {
-    color: #805822;
+    color: rgba(211, 85, 55, 0.85);
     font-weight: bold;
     text-decoration: underline;
 	transition: color 1s;
     font-size: 120%;
 }
 a.list:visited {
-    color: #57362D;
+    color: rgba(211, 85, 55, 0.65);
     text-decoration: none;
 	transition: color 1s;
 }
 a.list:hover {
 	transition: color 1s;
-    color: #452b24;
+    color: rgba(211, 85, 55, 1.0);
     text-decoration: none;
     background-color: inherit;
 }
@@ -124,13 +124,13 @@ a.list:hover {
 	
 }
 .proj {
-    box-shadow: 5px 5px 2px #4B7C8a;
+    box-shadow: 5px 5px 2px rgb(242,  237, 212);
     height: 45em;
     position: relative;
 }
 .proj:hover {
 	transition: box-shadow 0.25s;
-    box-shadow: 7px 7px 2px #8A5648;
+    box-shadow: 7px 7px 2px rgba(211, 85, 55, 1.0);;
 }
 .proj .projLink {
     display: inline;
@@ -197,7 +197,7 @@ a.list:hover {
 #image {
     max-width: 266px;
     padding: 0;
-    border: 5px solid #4B7C8A;
+    border: 5px solid rgba(211, 85, 55, 1.0);
     margin-left: 10%;
 }
 #topBar {
