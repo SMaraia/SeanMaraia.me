@@ -124,13 +124,13 @@ a.list:hover {
 	
 }
 .proj {
-    box-shadow: 5px 5px 2px #4B7C8a;
+    box-shadow: 5px 5px 2px rgb(242,  237, 212);
     height: 45em;
     position: relative;
 }
 .proj:hover {
 	transition: box-shadow 0.25s;
-    box-shadow: 7px 7px 2px #8A5648;
+    box-shadow: 7px 7px 2px rgba(211, 85, 55, 1.0);;
 }
 .proj .projLink {
     display: inline;
@@ -197,7 +197,7 @@ a.list:hover {
 #image {
     max-width: 266px;
     padding: 0;
-    border: 5px solid #4B7C8A;
+    border: 5px solid rgba(211, 85, 55, 1.0);
     margin-left: 10%;
 }
 #topBar {
