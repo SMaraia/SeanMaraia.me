@@ -2,204 +2,210 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
-	<meta content="yes" name="apple-mobile-web-app-capable" />
-	<title>Sean Maraia</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#projects .proj').click(function () {
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>Sean Maraia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#projects .proj').click(function () {
 
 
 
-				var holder = $(".thumb", this).attr('src');
-				holder = holder.split('.png');
-				var imageLink = holder[0] + 'Big.png';
-				var pageLink = holder[0].split('media/')[1] + '.html';
-				console.log(imageLink);
-				console.log(pageLink);
-				$('#curImg').fadeOut(500, function () {
+                var holder = $(".thumb", this).attr('src');
+                holder = holder.split('.png');
+                var imageLink = holder[0] + 'Big.png';
+                var pageLink = holder[0].split('media/')[1] + '.html';
+                console.log(imageLink);
+                console.log(pageLink);
+                $('#curImg').fadeOut(500, function () {
 
-					$('#curImg').attr('src', imageLink);
-					var width = $('#curImg').width();
-					if($(window).width() < width)
-						{
-						 $('#curImg').width($(window).width() * 0.75);	
-						}
-				});
-				$('#curProj').html($(".projName", this).html());
+                    $('#curImg').attr('src', imageLink);
+                    var width = $('#curImg').width();
+                    if ($(window).width() < width) {
+                        $('#curImg').width($(window).width() * 0.75);
+                    }
+                });
+                $('#curProj').html($(".projName", this).html());
 
-				$('.intro').css("display", 'none');
+                $('.intro').css("display", 'none');
 
-				window.location = "#imgPlace";
-				$('#longDescription').load(pageLink + ' #longDesc');
+                window.location = "#imgPlace";
+                $('#longDescription').load(pageLink + ' #longDesc');
 
-				$('#curImg').fadeIn(500);
-			});
-		});
-	</script>
+                $('#curImg').fadeIn(500);
+            });
+        });
+    </script>
 
 </head>
 
 <header>
-	<div class="header groupZero">
-		<a href="index.html">
-			<div class="col span_1_of_3" id="nameLink">
+    <div class="header groupZero">
+        <a href="index.html">
+            <div class="col span_1_of_3" id="nameLink">
 
-				<h1>Sean Maraia</h1>
-				<h2>Game Designer</h2>
+                <h1>Sean Maraia</h1>
+                <h2>Game Designer</h2>
 
-			</div>
-		</a>
+            </div>
+        </a>
 
-		<div class="col span_2_of_3 navBar">
-			<ul id="topBar">
+        <div class="col span_2_of_3 navBar">
+            <ul id="topBar">
 
-				<li class="barItem"><a href="media/SeanResume.pdf" class="list"> Resume Link</a></li>
-				<li class="barItem"><a href="writing.html" class="list">Writing Sample</a></li>
-				<li class="barItem"><a href="extra.html" class="list">Extra Information</a></li>
-				<li class="barItem"><a href="contact.html" class="list"> Contact Me</a></li>
-				<li class="barItem"><a href="http://www.linkedin.com/in/smaraia/" class="list"> LinkedIn </a>
-				</li>
-				<li class="barItem"><a href="https://github.com/SMaraia" class="list">GitHub</a></li>
-			</ul>
-		</div>
-	</div>
+                <li class="barItem"><a href="media/SeanResume.pdf" class="list"> Resume Link</a></li>
+                <li class="barItem"><a href="writing.html" class="list">Writing Sample</a></li>
+                <li class="barItem"><a href="extra.html" class="list">Extra Information</a></li>
+                <li class="barItem"><a href="contact.html" class="list"> Contact Me</a></li>
+                <li class="barItem"><a href="http://www.linkedin.com/in/smaraia/" class="list"> LinkedIn </a>
+                </li>
+                <li class="barItem"><a href="https://github.com/SMaraia" class="list">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
 </header>
 
 <body>
 
 
-	<div class="intro groupTwo">
-		<div class="col span_3_of_8">
-			<div id="image">
-				<img src="media/seanMTest.jpg" class="majorImg" title="A picture of myself" alt="Sean Maraia" width="266" height="400" />
-			</div>
-		</div>
+    <div class="intro groupTwo">
+        <div class="col span_3_of_8">
+            <div id="image">
+                <img src="media/seanMTest.jpg" class="majorImg" title="A picture of myself" alt="Sean Maraia" width="266" height="400" />
+            </div>
+        </div>
 
-		<div class="col span_5_of_8 about">
-			<h3>About Me</h3>
+        <div class="col span_5_of_8 about">
+            <h3>About Me</h3>
 
-			<blockquote>
-				<p>
+            <blockquote>
+                <p>
 
-					My name is Sean Maraia. I am a junior at Rochester Institute of Technology, where I study Game Design and Development the College of Computing and Information Sciences. I am currently looking for cooperative education opportunities within the computing industry for the Spring and/or Summer of 2016. Below are some of my more recent projects, which I hope you will enjoy. If you are interested in reaching me, you can click the "Contact Me" link above, or send me an email at spm3713 AT rit.edu.
+                    My name is Sean Maraia. I am a junior at Rochester Institute of Technology, where I study Game Design and Development the College of Computing and Information Sciences. I am currently looking for cooperative education opportunities within the computing industry for the Spring and/or Summer of 2016. Below are some of my more recent projects, which I hope you will enjoy. If you are interested in reaching me, you can click the "Contact Me" link above, or send me an email at spm3713 AT rit.edu.
 
-				</p>
+                </p>
 
-				<p class="extra">
-					My main interests are in the different ways that a narrative in a game can be presented through the mechanics of the game. Rather than solely relying upon text, dialogue, music or editing, or the many other methods of delivering story, video games and new media are interactive, and can use the way that the audience interacts with the medium to deliver the narrative. These mechanics, and the way they can mesh to tell a story is the most interesting part of Game Design to me.
-				</p>
+                <p class="extra">
+                    My main interests are in the different ways that a narrative in a game can be presented through the mechanics of the game. Rather than solely relying upon text, dialogue, music or editing, or the many other methods of delivering story, video games and new media are interactive, and can use the way that the audience interacts with the medium to deliver the narrative. These mechanics, and the way they can mesh to tell a story is the most interesting part of Game Design to me.
+                </p>
 
-			</blockquote>
-		</div>
-	</div>
+            </blockquote>
+        </div>
+    </div>
 
-	<div class="groupThree">
-		<a id="imgPlace"></a>
-		<div class="col span_3_of_3">
-			<h2 id="curProj">Projects: Click them to see more</h2>
+    <div class="groupThree">
+        <a id="imgPlace"></a>
+        <div class="col span_3_of_3">
+            <h2 id="curProj">Projects: Click them to see more</h2>
 
-			<img id="curImg" src="" alt="Click any of the Projects below for more information">
-			<p id="longDescription"></p>
-		</div>
-	</div>
+            <img id="curImg" src="" alt="Click any of the Projects below for more information">
+            <p id="longDescription"></p>
+        </div>
+    </div>
 
-	<div class="links groupOne" id="projects">
+    <div class="links groupOne" id="projects">
 
+        <div class="col span_1_of_3 proj">
+            <h3 class="projName">Draper Laboratory Co-Op</h3>
+            <img src="media/coopUI.png" class="thumb" title="Draper Laboratory Co-Op" alt="Draper Laboratory's Logo" width="400" height="188" />
+            <p>
+                A Project I worked on during the Summer of 2015 at the Charles Stark Draper Laboratory. I created two simulations in UE4 and Unity in order to demonstrate UI elements that would enhance the situational awareness of first responders without overloading them with extraneous information
+            </p>
+            
+            <ul>
 
+                <li class="projLink"><a href="media/UI_in_AR_and_VR.pdf" class="list"> Project Documentation</a>
+                </li>
 
-		<div class="col span_1_of_3 proj">
-			<h3 class="projName">A Dance of Flowers</h3>
+            </ul>
+        </div>
 
-			<img src="media/flowerGame.png" class="thumb" title="Trick or Treat Kitty" alt="Promo Picture from the Game" width="500" height="369s" />
-			<p>A relaxing game made with a group of students in Unity to demonstrate our proficiency in design and the development process.
-			</p>
-			<ul>
+        <div class="col span_1_of_3 proj">
+            <h3 class="projName">A Dance of Flowers</h3>
 
-				<li class="projLink"><a href="http://www.thunderforge.co/" class="list"> Project Link</a>
-				</li>
+            <img src="media/flowerGame.png" class="thumb" title="Trick or Treat Kitty" alt="Promo Picture from the Game" width="500" height="369s" />
+            <p>A relaxing game made with a group of students in Unity to demonstrate our proficiency in design and the development process.
+            </p>
+            <ul>
 
-			</ul>
+                <li class="projLink"><a href="http://www.thunderforge.co/" class="list"> Project Link</a>
+                </li>
 
-		</div>
+            </ul>
 
-
-		<div class="col span_1_of_3 proj">
-			<h3 class="projName">Pentagram</h3>
-			<img src="media/pentagram.png" class="thumb" title="Pentagram" alt="Promo Picture for Pentagram" width="400" height="286" />
-			<p>
-				Created for Game Design and Development II, Pentagram is a card game that encourages players to make ad-hoc alliances, and betray their allies in order to fulfill their macabre goals.
-			</p>
-			<ul>
-
-				<li class="projLink"><a href="https://docs.google.com/document/d/1l8B1wlN1kycyYQ_pIJYaokvDvjDkhJJna8hUdEreQPg/edit?usp=sharing" class="list">Rule Book</a>
-				</li>
-
-			</ul>
-
-		</div>
-
-		<div class="col span_1_of_3 proj">
-			<h3 class="projName">Draper Laboratory Co-Op</h3>
-			<img src="media/coopUI.png" class="thumb" title="Draper Laboratory Co-Op" alt="Draper Laboratory's Logo" width="400" height="138" />
-			<p>
-				An amusement park ride I modeled in Maya, and then brought into Unity to script the motion of the ride. I created the main assets, and the lights, and used the rest of the terrain assets as provided for free in the Unity Store.
-			</p>
-		</div>
-			
-	</div>
+        </div>
 
 
-	<div class="links groupTwo" id="projects">
+        <div class="col span_1_of_3 proj">
+            <h3 class="projName">Pentagram</h3>
+            <img src="media/pentagram.png" class="thumb" title="Pentagram" alt="Promo Picture for Pentagram" width="400" height="286" />
+            <p>
+                Created for Game Design and Development II, Pentagram is a card game that encourages players to make ad-hoc alliances, and betray their allies in order to fulfill their macabre goals.
+            </p>
+            <ul>
 
+                <li class="projLink"><a href="https://docs.google.com/document/d/1l8B1wlN1kycyYQ_pIJYaokvDvjDkhJJna8hUdEreQPg/edit?usp=sharing" class="list">Rule Book</a>
+                </li>
 
+            </ul>
 
-		<div class="col span_1_of_3 proj">
-			<h3 class="projName">Portal 2 Test Chamber</h3>
-
-			<img src="media/portalLevel.png" class="thumb" title="Portal 2 Level Map" alt="Image of my level in Portal 2" width="400" height="225" />
-			<p>Made for my Level Design Seminar, this level was created in four weeks to demonstrate mastery in Level Design, and received critique from several other students, allowing me to improve the level over the course of three iterations.
-			</p>
-			<ul>
-
-				<li class="projLink"><a href="https://www.youtube.com/playlist?list=PLdRWCuJsHGWgZ1FaonGyUVd_-W3YcypCp" class="list">Playlist of Iteration Videos</a>
-				</li>
-
-			</ul>
-
-		</div>
-
-
-		<div class="col span_1_of_3 proj">
-			<h3 class="projName">Zombie Fiesta</h3>
-			<img src="media/zf.png" class="thumb" title="Zombie Fiesta" alt="Picture of Zombie Fiesta in Action" width="400" height="300" />
-			<p>
-				Zombie Fiesta was a project for the Game Design and Algorithmic Problem Solving II class, built in XNA with C#. I created the external tool that created items for the inventory system, and worked on the games implementation of these items, and the inventory system as a whole. I also worked on the score aspect of the UI.
-			</p>
-			<ul>
-				<li class="projLink"><a href="http://www.github.com/liam-middlebrook/Navier-Boats" class="list"> Project Link </a>
-				</li>
-			</ul>
-
-		</div>
-
-	</div>
+        </div>
 
 
 
-	<footer>
-		<cite>Copyright 2015 Sean Maraia</cite>
-		<br />
-		<code>All rights reserved</code>
+    </div>
 
-		<cite>Column Based CSS based on <a href="http://www.responsivegridsystem.com/">Responsive Grid System by Graham Miller</a></cite>
-		<br />
-		<cite> Font: Copyright (c) 2011 Natanael Gama (exo@ndiscovered.com), with Reserved Font Name “Exo”</cite>
-	</footer>
+
+    <div class="links groupTwo" id="projects">
+
+
+
+        <div class="col span_1_of_3 proj">
+            <h3 class="projName">Portal 2 Test Chamber</h3>
+
+            <img src="media/portalLevel.png" class="thumb" title="Portal 2 Level Map" alt="Image of my level in Portal 2" width="400" height="225" />
+            <p>Made for my Level Design Seminar, this level was created in four weeks to demonstrate mastery in Level Design, and received critique from several other students, allowing me to improve the level over the course of three iterations.
+            </p>
+            <ul>
+
+                <li class="projLink"><a href="https://www.youtube.com/playlist?list=PLdRWCuJsHGWgZ1FaonGyUVd_-W3YcypCp" class="list">Playlist of Iteration Videos</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="col span_1_of_3 proj">
+            <h3 class="projName">Zombie Fiesta</h3>
+            <img src="media/zf.png" class="thumb" title="Zombie Fiesta" alt="Picture of Zombie Fiesta in Action" width="400" height="300" />
+            <p>
+                Zombie Fiesta was a project for the Game Design and Algorithmic Problem Solving II class, built in XNA with C#. I created the external tool that created items for the inventory system, and worked on the games implementation of these items, and the inventory system as a whole. I also worked on the score aspect of the UI.
+            </p>
+            <ul>
+                <li class="projLink"><a href="http://www.github.com/liam-middlebrook/Navier-Boats" class="list"> Project Link </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <cite>Copyright 2015 Sean Maraia</cite>
+        <br />
+        <code>All rights reserved</code>
+
+        <cite>Column Based CSS based on <a href="http://www.responsivegridsystem.com/">Responsive Grid System by Graham Miller</a></cite>
+        <br />
+        <cite> Font: Copyright (c) 2011 Natanael Gama (exo@ndiscovered.com), with Reserved Font Name “Exo”</cite>
+    </footer>
 </body>
 
 </html>
