@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0000, user-scalable=yes" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <title>Pentagram</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<header>
+	<div class="header groupZero">
+		<a href="index.html">
+			<div class="col span_1_of_3" id="nameLink">
+
+				<h1>Sean Maraia</h1>
+				<h2>Game Designer</h2>
+
+			</div>
+		</a>
+
+		<div class="col span_2_of_3 navBar">
+			<ul id="topBar">
+
+				<li class="barItem"><a href="media/SeanResume.pdf" class="list"> Resume Link</a></li>
+				<li class="barItem"><a href="writing.html" class="list">Writing Sample</a></li>
+				<li class="barItem"><a href="extra.html" class="list">Extra Information</a></li>
+				<li class="barItem"><a href="contact.html" class="list"> Contact Me</a></li>
+				<li class="barItem"><a href="http://www.linkedin.com/in/smaraia/" class="list"> LinkedIn </a>
+				</li>
+				<li class="barItem"><a href="https://github.com/SMaraia" class="list">GitHub</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+    
+<body>
+
+    <div class="links groupOne">
+
+
+        <div class="col span_3_of_3">
+            <h2>Gerrymandering</h2>
+        </div>
+    </div>
+
+    <div class="groupTwo">
+        <div class="col span_2_of_3">
+            <img src="media/GerrymanderingBig.png" class="majorImg" title="Gerrymandering Level" alt="This is a screenshot of a solved level in the game" width="694" height="1507" />
+        </div>
+
+
+    <div class="groupThree">
+        
+        <div class="col span_1_of_3">
+            <p id = "longDesc">
+
+                Originally a class project for my Casual Game Development course, this became a side project after I graduated in 2016. I created the UI for the game as well as all logic for game state and puzzle creation during the course, later working on all aspects of the game. However, a major roadblock emerged during the course of development; Although we could detect all of the possible loops of nodes that would create a "District" of voters, there was an expnential increase in the amount of districts it would detect, most of them false positives. Our original implementation for the class was creative and gave us the correct results to filter our list to only include the smallest districts that didn't overlap voters, it was incredibly slow. This limited puzzle complexity to a roughly 4x5 grid or smaller, and even this could result in stoppages of multiple seconds while the cycle search ran. After graduation, using an algorithm by Hongbo Liu and Jiaxin Wang, detailed "A new way to enumerate cycles in graph," I was able to provide a better solution for the detection of all possible cycles. This still left the task of filtering all of these cycles to provide the best list. My eventual solution was to guarantee the "winding" of the cycle to always be in the same direction, so that I could group them by starting vertex, and utilitze the new Unity Job System to multithread the sorting of each of these groups to find the smallest cycle in terms of area for each. This results in our desired set of districts, in a much faster time frame.
+            </p>
+            <ul>
+                <li class="projLink" style="list-style-type:none"><a href="https://github.com/RIT-SMCS/Gerrymander" class="list"> Project Link </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        
+    </div>
+
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+<footer>
+        <cite>Copyright 2019 Sean Maraia</cite>
+        <br />
+        <code>All rights reserved</code>
+
+        <cite>Column Based CSS based on <a href="http://www.responsivegridsystem.com/">Responsive Grid System by Graham Miller</a></cite>
+        <br />
+        <cite> Font: Copyright (c) 2011 Natanael Gama (exo@ndiscovered.com), with Reserved Font Name “Exo”</cite>
+    </footer>
+</body>
+
+</html>
+
